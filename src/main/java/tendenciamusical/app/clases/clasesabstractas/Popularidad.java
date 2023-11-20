@@ -6,4 +6,6 @@ public abstract class Popularidad {
 
     public abstract void cambiarPopularidad(Cancion cancion);
 
+    public abstract String leyenda(Cancion cancion);
+
 }

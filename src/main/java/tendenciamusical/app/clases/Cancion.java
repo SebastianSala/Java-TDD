@@ -33,6 +33,10 @@ public class Cancion {
         this.popularidad.cambiarPopularidad(this);
     }
 
+    public String leyenda() {
+        return this.popularidad.leyenda(this);
+    }
+
 //    public Popularidad getPopularidad() {
 //        return popularidad;
 //    }

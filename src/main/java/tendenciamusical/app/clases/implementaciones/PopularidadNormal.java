@@ -11,4 +11,16 @@ public class PopularidadNormal extends Popularidad {
             cancion.setPopularidad(new PopularidadAuge());
         }
     }
+
+    @Override
+    public String leyenda(Cancion cancion) {
+        String texto = String.format(
+                "%1$s - %2$s - %3$s",
+                cancion.getArtista(),
+                cancion.getAlbum(),
+                cancion.getNombreCancion()
+        );
+        return texto;
+    }
+
 }
