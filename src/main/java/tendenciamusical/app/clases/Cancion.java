@@ -13,15 +13,19 @@ public class Cancion {
 
     private Popularidad popularidad;
 
+    private Icono icono;
+
     private String nombreCancion;
     private String artista;
     private String album;
     private int anio;
     private int reproducciones;
+    private int horasDesdeUltimaReproduccion;
     private int likes;
     private int dislikes;
 
     public Cancion(String nombreCancion, String artista, String album, int anio) {
+        this.icono = Icono.MUSICAL_NOTE;
         this.popularidad = new PopularidadNormal();
         this.nombreCancion = nombreCancion;
         this.artista = artista;
@@ -34,6 +38,7 @@ public class Cancion {
     }
 
     public String leyenda() {
+        this.cambiarPopularidad();
         return this.popularidad.leyenda(this);
     }
 

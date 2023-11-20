@@ -5,11 +5,19 @@ import tendenciamusical.app.App;
 public class TendenciaMusical {
 
     public static void main(String[] args) {
-        System.out.println("App tendencias musicales: ");
+
+        TendenciaMusical.appDescription();
+
+        App app = new App();
+        app.runApp();
+
     }
 
-    App app = new App();
-    app.run();
+    private static void appDescription() {
+        System.out.println("App tendencias musicales");
+        System.out.println("------------------------");
+        System.out.println();
 
+    }
 
 }
