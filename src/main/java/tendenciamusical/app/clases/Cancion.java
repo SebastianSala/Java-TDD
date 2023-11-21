@@ -42,28 +42,5 @@ public class Cancion {
         return this.popularidad.leyenda(this);
     }
 
-//    public Popularidad getPopularidad() {
-//        return popularidad;
-//    }
-//
-//    public void setPopularidad(Popularidad popularidad) {
-//        this.popularidad = popularidad;
-//    }
-//
-//    public int getReproducciones() {
-//        return this.reproducciones;
-//    }
-//
-//    public void setReproducciones(int reproducciones) {
-//        this.reproducciones = reproducciones;
-//    }
-//
-//
-//    public int getLikes() {
-//        return likes;
-//    }
-//
-//    public void setLikes(int likes) {
-//        this.likes = likes;
-//    }
+
 }
